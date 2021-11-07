@@ -41,3 +41,18 @@ out repository.
 
 Afterwards you should end up with i386, armv8, and riscv toolchains under the
 `proto/` directory.
+
+## Building directly on OmniOS
+
+You can build directly on OmniOS r151039 from this fork by installing a few
+prerequisites and simply running gmake.
+
+```
+pfexec pkg install gnu-make gnu-tar gnu-patch flex bison
+```
+
+Then build as usual:
+
+```
+$ gmake MAX_JOBS=8
+```

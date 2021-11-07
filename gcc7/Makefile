@@ -40,8 +40,8 @@ FETCH_URL.$(NEWLIB_TAR) =	ftp://sourceware.org/pub/newlib
 
 SEPARATE_BUILD =	yes
 
-GCC =	/opt/local/bin/gcc
-GXX =	/opt/local/bin/g++
+GCC =	/usr/bin/gcc
+GXX =	/usr/bin/g++
 CFLAGS = -g -O2
 
 AUTOCONF_OPTS_i86pc = \

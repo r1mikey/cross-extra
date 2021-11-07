@@ -45,13 +45,13 @@ MAKE_VERBOSE =	V=1
 GCC.64 =	$(GCC) -m64
 GXX.64 =	$(GXX) -m64
 
-GCC.host =	/opt/local/bin/gcc
-GXX.host =	/opt/local/bin/g++
+GCC.host =	/usr/bin/gcc
+GXX.host =	/usr/bin/g++
 GCC.host.64 =	$(GCC.host) -m64
 GXX.host.64 =	$(GXX.host) -m64
 
-YACC = 		/opt/local/bin/yacc
-GPATCH =	/opt/local/bin/gpatch
+YACC = 		/usr/bin/yacc
+GPATCH =	/usr/bin/gpatch
 
 SYSINCDIRS =	/usr/include
 SYSLIBDIRS =	/usr/lib /lib
@@ -67,7 +67,7 @@ CPPFLAGS =	$(SYSINCDIRS:%=-isystem $(DESTDIR)/%)
 # and using this perl interpeter:
 #
 PATH_PERL =	/usr/perl5/bin/perl
-PERLLIBDIR =	/usr/perl5/5.12/lib
+PERLLIBDIR =	/usr/perl5/5.34/lib
 
 #
 # These are all definitions that relate to Sun Make. There are basically two
@@ -76,7 +76,7 @@ PERLLIBDIR =	/usr/perl5/5.12/lib
 # other makes. Beacuse MAKE is used extensively to mean GNU make in these
 # makefiles, we instead use SUN_MAKE and SUM_MAKE_STRAP.
 #
-SUN_MAKE_STRAP=/opt/local/bin/dmake
+SUN_MAKE_STRAP=/usr/bin/dmake
 SUN_MAKE=$(STRAPPROTO)/usr/bin/dmake
 
 #
